@@ -1,5 +1,5 @@
 /*******************************/
-/* BELOW 944px (Tablets) */
+/*     BELOW 944px (Tablets)   */
 /*******************************/
 @media (max-width: 59em) {
   /* MOBILE NAVIGATION */
@@ -71,5 +71,14 @@
   .main-nav-link:link,
   .main-nav-link:visited {
     font-size: 3rem;
+  }
+}
+
+/*******************************/
+/*       */
+/*******************************/
+@media (max-width: 400px) {
+  .section-hero {
+    background-position-x: 50%;
   }
 }
