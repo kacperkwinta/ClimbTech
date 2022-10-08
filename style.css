@@ -91,7 +91,7 @@ body {
 /*******************************/
 .section-hero {
   height: 100vh;
-  background-image: url(/img/hero-bg.webp);
+  background-image: url(../img/hero-bg.webp);
   background-repeat: no-repeat no-repeat;
   background-position-y: 70%;
   background-size: cover;
