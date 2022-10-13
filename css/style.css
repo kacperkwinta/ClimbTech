@@ -28,6 +28,7 @@ html {
 
 body {
   margin: 0;
+  color: #212529;
 }
 
 /*******************************/
@@ -43,6 +44,10 @@ body {
 .flex {
   display: flex;
   gap: 4.8rem;
+}
+
+.header-secondary {
+  font-size: 5.2rem;
 }
 
 /*******************************/
@@ -66,7 +71,7 @@ body {
 }
 
 .logo {
-  height: 8rem;
+  height: 6rem;
 }
 
 .main-nav-list {
@@ -120,7 +125,7 @@ body {
 .icon-mobile-nav {
   height: 4.8em;
   width: 4.8rem;
-  color: #333;
+  color: #212529;
 }
 
 .icon-mobile-nav[name="close-outline"] {
@@ -140,7 +145,11 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  animation: showUpCircle 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+  animation: showUpCircle 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.hero-text {
+  padding: 0 2.4rem;
 }
 
 .hero-text h1 {
@@ -209,13 +218,21 @@ body {
 /*******************************/
 .section-video {
   padding: 9.6rem 0;
+  background-image: url(/ooorganize.svg);
+}
+
+.section-video .container {
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
 
 .yt-video {
-  display: block;
-  width: 70rem;
-  height: 40rem;
   border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 60rem;
+  width: 110rem;
 }
 
 .video-text {
@@ -234,6 +251,9 @@ body {
   margin-bottom: 1.2rem;
 }
 
-.video-text h2 {
-  font-size: 5.2rem;
+/*******************************/
+/*        SECTION         */
+/*******************************/
+.section-about {
+  padding: 9.6rem 0;
 }
