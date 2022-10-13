@@ -1,9 +1,48 @@
+/* 
+
+- FONT SIZE SYSTEM (px) 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+
+- SPACING SYSTEM (px) 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 
+
+--- Line heights:
+
+--- COLORS:
+
+
+*/
+
+/*******************************/
+/*      GENERAL STYLES         */
+/*******************************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
+}
+
+/*******************************/
+/*           REUSABLE          */
+/*******************************/
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.flex {
+  display: flex;
+  gap: 4.8rem;
 }
 
 /*******************************/
@@ -16,11 +55,14 @@ body {
   right: 0;
   height: 8rem;
   width: 100%;
+  z-index: 1;
 
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.767);
+
+  animation: slideDown 1.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .logo {
@@ -47,22 +89,21 @@ body {
 
 .main-nav-link:active,
 .main-nav-link:hover {
-  color: #adb5bd;
+  color: #495057;
 }
 
 .main-nav-link.nav-cta:link,
 .main-nav-link.nav-cta:visited {
   display: inline-block;
   padding: 1.2rem 2.4rem;
-  border-radius: 9px;
+  border-radius: 8px;
   color: #ffffff;
   background-color: #363636;
 }
 
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
-  background-color: #dee2e6;
-  color: #212529;
+  background-color: #495057;
 }
 
 /******************/
@@ -98,18 +139,101 @@ body {
 
   display: flex;
   justify-content: center;
+  text-align: center;
+  animation: showUpCircle 1.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .hero-text h1 {
   margin-top: 20rem;
   color: #212529;
   font-size: 6.2rem;
+  animation: slideDown 1.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-.hero-text a {
+.hero-text a:link,
+.hero-text a:visited {
   display: inline-block;
+  margin-top: 4.8rem;
+  border: 3px solid #000;
+  padding: 1.2rem 2.4rem;
+  font-size: 2.4rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #212529;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  animation: showUp, slideDown 1.2s;
 }
 
-/* - FONT SIZE SYSTEM (px) 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+.hero-text a:active,
+.hero-text a:hover {
+  transform: scale(1.1);
+}
 
-/* - SPACING SYSTEM (px) 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+/* HEADER, BUTTON ANIUMATION */
+@keyframes slideDown {
+  0% {
+    transform: translate(0, -100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes showUp {
+  0% {
+    opacity: 0;
+    clip-path: circle(1.4% at 1% 100%);
+  }
+
+  100% {
+    opacity: 1;
+    clip-path: circle(141.2% at 0 100%);
+  }
+}
+
+@keyframes showUpCircle {
+  0% {
+    clip-path: circle(1.4% at 1% 100%);
+  }
+
+  100% {
+    clip-path: circle(141.2% at 0 100%);
+  }
+}
+
+/*******************************/
+/*       VIDEO SECTION         */
+/*******************************/
+.section-video {
+  padding: 9.6rem 0;
+}
+
+.yt-video {
+  display: block;
+  width: 70rem;
+  height: 40rem;
+  border-radius: 8px;
+}
+
+.video-text {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.video-text .icon {
+  padding: 2.4rem;
+  border-radius: 50%;
+  background-color: #ced4da;
+  color: #212529;
+  height: 4.8rem;
+  width: 4.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.video-text h2 {
+  font-size: 5.2rem;
+}

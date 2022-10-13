@@ -1,4 +1,27 @@
 /*******************************/
+/*    BELOW 1200px (Laptops)   */
+/*******************************/
+@media (max-width: 75em) {
+  .container {
+    max-width: 90%;
+  }
+
+  .section-video .container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+/**************************/
+/* BELOW 1100PX (Laptops) */
+/**************************/
+@media (max-width: 69em) {
+  .section-hero {
+    background-position-x: 50%;
+  }
+}
+
+/*******************************/
 /*     BELOW 944px (Tablets)   */
 /*******************************/
 @media (max-width: 59em) {
@@ -74,11 +97,22 @@
   }
 }
 
-/*******************************/
-/*       */
-/*******************************/
-@media (max-width: 1100px) {
-  .section-hero {
-    background-position-x: 50%;
+/********************************/
+/* BELOW 600PX (Medium Tablets) */
+/********************************/
+@media (max-width: 25em) {
+  .yt-video {
+    width: 40rem;
+    height: 35rem;
+  }
+}
+
+/*****************************/
+/* BELOW 400PX (Smartphones) */
+/*****************************/
+@media (max-width: 25em) {
+  .yt-video {
+    width: 35rem;
+    height: 25rem;
   }
 }

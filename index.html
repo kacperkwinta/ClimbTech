@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ClimbTech</title>
-
-    <!-- css -->
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
-
-    <!-- Icons -->
+    <!-- ICONS -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -27,7 +32,7 @@
 
   <body>
     <!-- ************************ -->
-    <!-- NAVIGATION -->
+    <!--        NAVIGATION        -->
     <!-- ************************ -->
     <header class="header">
       <a href="#">
@@ -36,11 +41,11 @@
 
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#how">Home</a></li>
-          <li><a class="main-nav-link" href="#meals">Poznaj nas</a></li>
-          <li><a class="main-nav-link" href="#testimonials">Realizacje</a></li>
-          <li><a class="main-nav-link" href="#pricing">Oferta</a></li>
-          <li><a class="main-nav-link nav-cta" href="#cta">Kontakt</a></li>
+          <li><a class="main-nav-link" href="#">Home</a></li>
+          <li><a class="main-nav-link" href="#poznaj-nas">Poznaj nas</a></li>
+          <li><a class="main-nav-link" href="#">Realizacje</a></li>
+          <li><a class="main-nav-link" href="#">Oferta</a></li>
+          <li><a class="main-nav-link nav-cta" href="#">Kontakt</a></li>
         </ul>
       </nav>
 
@@ -50,8 +55,40 @@
       </button>
     </header>
 
+    <!-- ************************ -->
+    <!--       HERO SECTION       -->
+    <!-- ************************ -->
     <section class="section-hero">
       <div class="hero-text">
+        <h1>Stawiamy poprzeczkę wysoko.</h1>
+        <a href="#poznaj-nas">Poznaj nas</a>
+      </div>
+    </section>
+
+    <!-- ************************ -->
+    <!--      VIDEO SECTION       -->
+    <!-- ************************ -->
+    <section class="section-video" id="poznaj-nas">
+      <div class="container flex">
+        <div class="video">
+          <iframe
+            class="yt-video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Ori5Rfy2pAQ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="video-text">
+          <span
+            ><p><ion-icon class="icon" name="construct-outline"></ion-icon></p>
+            <h2>Zobacz jak pracujemy.</h2>
+          </span>
+        </div>
       </div>
     </section>
 
