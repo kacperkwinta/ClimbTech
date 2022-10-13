@@ -30,6 +30,16 @@
     font-size: 3.6rem;
   }
 
+  .icon {
+    padding: 2rem;
+    border-radius: 50%;
+    background-color: #ced4da;
+    color: #212529;
+    height: 3.2rem;
+    width: 3.2rem;
+    margin-bottom: 1.2rem;
+  }
+
   .btn-mobile-nav {
     display: block;
     z-index: 9999;
@@ -96,7 +106,7 @@
 
   .main-nav-link:link,
   .main-nav-link:visited {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
