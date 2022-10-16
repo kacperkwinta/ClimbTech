@@ -207,6 +207,10 @@
   /***********************/
   /*  SECTION ABOUT US   */
   /***********************/
+   .about-container {
+    padding: 0;
+  }
+
   .about-img {
     width: 100%;
   }
