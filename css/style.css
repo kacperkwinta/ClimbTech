@@ -24,7 +24,7 @@ html {
   font-size: 62.5%;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  scroll-padding-top: 6rem;
+  /* scroll-padding-top: 8rem; */
 }
 
 body {
@@ -254,7 +254,10 @@ body {
 /*       VIDEO SECTION         */
 /*******************************/
 .section-video {
-  padding: 9.6rem 0;
+  padding: 9.6rem 0 12.8rem 0;
+  background-image: url(../img/section-video-bg.svg);
+  background-repeat: no-repeat no-repeat;
+  background-size: cover;
 }
 
 .section-video .container {
@@ -299,7 +302,7 @@ body {
 
 .about-text {
   font-size: 2.4rem;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 /*******************************/
