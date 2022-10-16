@@ -195,7 +195,6 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  animation: blur 2s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .hero-text {
@@ -248,16 +247,6 @@ body {
 
   100% {
     opacity: 1;
-  }
-}
-
-@keyframes blur {
-  0% {
-    filter: blur(10px);
-  }
-
-  100% {
-    filter: blur(0);
   }
 }
 
