@@ -101,10 +101,6 @@ body {
   text-align: right;
 }
 
-.margin-btm-b {
-  margin-bottom: 9.6rem;
-}
-
 /*******************************/
 /*            HEADER           */
 /*******************************/
@@ -291,6 +287,8 @@ body {
 .section-about {
   padding: 9.6rem 0;
 }
+
+
 
 .about-container:not(:last-child) {
   margin-bottom: 9.6rem;

@@ -221,6 +221,13 @@
   .about-img {
     width: 100%;
   }
+
+  /***********************/
+  /*    HERO SECTION     */
+  /***********************/
+  .section-hero {
+    background-position-x: 60%;
+  }
 }
 
 /***********************************/
@@ -230,12 +237,6 @@
   /***********************/
   /*    HERO SECTION     */
   /***********************/
-  .section-hero {
-    background-position-x: 60%;
-  }
-
- 
-
   .hero-text a:link,
   .hero-text a:visited {
     font-size: 1.8rem;
