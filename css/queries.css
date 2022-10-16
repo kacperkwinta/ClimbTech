@@ -2,9 +2,16 @@
 /* BELOW 1100PX (Laptops) */
 /**************************/
 @media (max-width: 69em) {
-  /***********************/
-  /*   VIDEO SECTION     */
-  /***********************/
+  /******************/
+  /*  HERO SECTION  */
+  /******************/
+  .hero-text h1 {
+    font-size: 5.2rem;
+  }
+
+  /******************/
+  /* VIDEO SECTION  */
+  /******************/
   .yt-video {
     height: 40rem;
     width: 80rem;
@@ -15,16 +22,16 @@
 /*     BELOW 944px (Tablets)   */
 /*******************************/
 @media (max-width: 59em) {
-  /***********************/
-  /*    HERO SECTION     */
-  /***********************/
+  /*****************/
+  /* HERO SECTION  */
+  /*****************/
   .hero-text h1 {
     font-size: 4.8rem;
   }
 
-  /***********************/
-  /*       REUSABLE      */
-  /***********************/
+  /*****************/
+  /*    REUSABLE   */
+  /*****************/
   .header-secondary {
     font-size: 3.6rem;
   }
@@ -212,6 +219,10 @@
   /*    HERO SECTION     */
   /***********************/
 
+  .section-hero {
+    background-position-x: 60%;
+  }
+
   .hero-text {
     padding: 0;
   }
@@ -222,9 +233,7 @@
 
   .hero-text a:link,
   .hero-text a:visited {
-    
     font-size: 2rem;
- 
   }
 
   /***********************/
