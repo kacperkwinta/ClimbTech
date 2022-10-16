@@ -2,6 +2,9 @@
 /* BELOW 1100PX (Laptops) */
 /**************************/
 @media (max-width: 69em) {
+  /***********************/
+  /*   VIDEO SECTION     */
+  /***********************/
   .yt-video {
     height: 40rem;
     width: 80rem;
@@ -12,20 +15,16 @@
 /*     BELOW 944px (Tablets)   */
 /*******************************/
 @media (max-width: 59em) {
-  /* MOBILE NAVIGATION */
-
-  .header {
-    height: 6rem;
-  }
-
-  .section-video {
-    padding: 4.8rem 0;
-  }
-
+  /***********************/
+  /*    HERO SECTION     */
+  /***********************/
   .hero-text h1 {
     font-size: 4.8rem;
   }
 
+  /***********************/
+  /*       REUSABLE      */
+  /***********************/
   .header-secondary {
     font-size: 3.6rem;
   }
@@ -38,6 +37,41 @@
     height: 3.2rem;
     width: 3.2rem;
     margin-bottom: 1.2rem;
+  }
+
+  /***********************/
+  /*   VIDEO SECTION     */
+  /***********************/
+  .section-video {
+    padding: 4.8rem 0;
+  }
+
+  /***********************/
+  /*  SECTION ABOUT US   */
+  /***********************/
+  .about-container {
+    grid-template-columns: 1fr;
+    padding: 4.8rem;
+  }
+
+  .about-img {
+    width: 75%;
+  }
+
+  /* centering title of the section */
+  .container--big .hidden {
+    text-align: center;
+  }
+
+  .about-container--reverse .about-text {
+    grid-row: 2;
+  }
+
+  /******************/
+  /*    NAVIGATION  */
+  /******************/
+  .header {
+    height: 6rem;
   }
 
   .btn-mobile-nav {
@@ -114,10 +148,15 @@
 /*     BELOW 800px (Tablets)   */
 /*******************************/
 @media (max-width: 60em) {
+  /***********************/
+  /*    HERO SECTION     */
+  /***********************/
   .hero-text h1 {
     margin-top: 15rem;
   }
-
+  /***********************/
+  /*   VIDEO SECTION     */
+  /***********************/
   .yt-video {
     width: 60rem;
   }
@@ -127,9 +166,29 @@
 /*     BELOW 600px (Small Tablets)   */
 /*************************************/
 @media (max-width: 37.5em) {
+  /***********************/
+  /*       REUSABLE      */
+  /***********************/
+  .header-secondary {
+    font-size: 3rem;
+  }
+  /***********************/
+  /*   VIDEO SECTION     */
+  /***********************/
   .yt-video {
     width: 40rem;
     height: 30rem;
+  }
+
+  /***********************/
+  /*  SECTION ABOUT US   */
+  /***********************/
+  .about-container {
+    padding: 2.4rem;
+  }
+
+  .about-text {
+    font-size: 1.8rem;
   }
 }
 
@@ -137,8 +196,18 @@
 /*     BELOW 400px (Smartphones)   */
 /***********************************/
 @media (max-width: 25em) {
+  /***********************/
+  /*   VIDEO SECTION     */
+  /***********************/
   .yt-video {
     width: 30rem;
     height: 20rem;
+  }
+
+  /***********************/
+  /*  SECTION ABOUT US   */
+  /***********************/
+  .about-img {
+    width: 100%;
   }
 }

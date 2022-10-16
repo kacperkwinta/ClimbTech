@@ -24,11 +24,15 @@ html {
   font-size: 62.5%;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 
 body {
   margin: 0;
+  padding: 0;
+  background-image: url(/ooorganize.svg);
   color: #212529;
+  scroll-padding-top: 18rem;
 }
 
 /*******************************/
@@ -36,7 +40,13 @@ body {
 /*******************************/
 
 .container {
-  max-width: 1200px;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.container--big {
+  max-width: 140rem;
   margin: 0 auto;
   padding: 0 3.2rem;
 }
@@ -46,11 +56,28 @@ body {
   gap: 4.8rem;
 }
 
+.grid {
+  display: grid;
+  gap: 4.8rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid--v-center {
+  align-items: center;
+}
+
+.grid--h-center {
+  justify-items: center;
+}
+
 .header-secondary {
   font-size: 5.2rem;
 }
 
- .icon {
+.icon {
   padding: 2.4rem;
   border-radius: 50%;
   background-color: #ced4da;
@@ -58,6 +85,10 @@ body {
   height: 4.8rem;
   width: 4.8rem;
   margin-bottom: 1.2rem;
+}
+
+.text-right {
+  text-align: right;
 }
 
 /*******************************/
@@ -71,6 +102,7 @@ body {
   height: 8rem;
   width: 100%;
   z-index: 1;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
   display: flex;
   justify-content: space-around;
@@ -155,7 +187,7 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  animation: showUpCircle 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+  animation: blur 2s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .hero-text {
@@ -204,22 +236,20 @@ body {
 @keyframes showUp {
   0% {
     opacity: 0;
-    clip-path: circle(1.4% at 1% 100%);
   }
 
   100% {
     opacity: 1;
-    clip-path: circle(141.2% at 0 100%);
   }
 }
 
-@keyframes showUpCircle {
+@keyframes blur {
   0% {
-    clip-path: circle(1.4% at 1% 100%);
+    filter: blur(10px);
   }
 
   100% {
-    clip-path: circle(141.2% at 0 100%);
+    filter: blur(0);
   }
 }
 
@@ -228,21 +258,18 @@ body {
 /*******************************/
 .section-video {
   padding: 9.6rem 0;
-  background-image: url(/ooorganize.svg);
 }
 
 .section-video .container {
-  justify-content: center;
   flex-direction: column;
-  text-align: center;
   align-items: center;
 }
 
 .yt-video {
   border-radius: 8px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   height: 60rem;
   width: 110rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .video-text {
@@ -251,11 +278,49 @@ body {
   text-align: center;
 }
 
-
-
 /*******************************/
-/*        SECTION         */
+/*      SECTION ABOUT US       */
 /*******************************/
 .section-about {
   padding: 9.6rem 0;
+}
+
+.about-container:not(:last-child) {
+  margin-bottom: 4.8rem;
+}
+
+.about-container--reverse .about-text {
+  grid-row: 1;
+}
+
+.about-img {
+  display: block;
+  width: 75%;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.about-text {
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+
+/*******************************/
+/*        ANIMATIONS           */
+/*******************************/
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 0.7s;
+}
+
+.show {
+  filter: blur(0);
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
 }
