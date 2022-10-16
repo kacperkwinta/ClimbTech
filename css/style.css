@@ -88,7 +88,7 @@ body {
 }
 
 .icon-small {
-  padding: 2.4rem;
+  padding: 2rem;
   border-radius: 50%;
   background-color: #ced4da;
   color: #212529;
@@ -289,7 +289,7 @@ body {
 }
 
 .section-about .container--big:nth-child(1) {
-  margin-bottom: 4.8rem;
+  margin-bottom: 6.4rem;
 }
 
 .about-container:not(:last-child) {
