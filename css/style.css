@@ -30,7 +30,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-image: url(/ooorganize.svg);
+  background-image: url(../img/body-bg.svg);
   color: #212529;
   scroll-padding-top: 18rem;
 }
