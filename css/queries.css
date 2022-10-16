@@ -209,6 +209,25 @@
 /***********************************/
 @media (max-width: 25em) {
   /***********************/
+  /*    HERO SECTION     */
+  /***********************/
+
+  .hero-text {
+    padding: 0;
+  }
+
+  .hero-text h1 {
+    font-size: 4.4rem;
+  }
+
+  .hero-text a:link,
+  .hero-text a:visited {
+    
+    font-size: 2rem;
+ 
+  }
+
+  /***********************/
   /*   VIDEO SECTION     */
   /***********************/
   .yt-video {

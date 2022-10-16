@@ -265,7 +265,7 @@ body {
 .yt-video {
   border-radius: 8px;
   height: 60rem;
-  width: 110rem;
+  width: 90rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -307,12 +307,10 @@ body {
 /*******************************/
 .hidden {
   opacity: 0;
-  filter: blur(5px);
   transition: all 0.7s;
 }
 
 .show {
-  filter: blur(0);
   opacity: 1;
 }
 
