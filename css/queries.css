@@ -62,7 +62,7 @@
   }
 
   .about-img {
-    width: 75%;
+    width: 60%;
   }
 
   /* centering title of the section */
@@ -152,7 +152,7 @@
 }
 
 /*******************************/
-/*     BELOW 800px (Tablets)   */
+/*     BELOW 900px (Tablets)   */
 /*******************************/
 @media (max-width: 60em) {
   /***********************/
@@ -204,6 +204,10 @@
   /***********************/
   .about-container {
     padding: 2.4rem;
+  }
+
+  .about-img {
+    width: 80%;
   }
 
   .about-text {

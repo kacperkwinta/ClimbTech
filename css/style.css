@@ -30,7 +30,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-image: url(../img/body-bg.svg);
   color: #212529;
   scroll-padding-top: 6rem;
 }
@@ -286,6 +285,8 @@ body {
 /*******************************/
 .section-about {
   padding: 9.6rem 0;
+  background-image: url(../img/section-about-us-bg.svg);
+  background-size: cover;
 }
 
 .section-about .container--big:nth-child(1) {
