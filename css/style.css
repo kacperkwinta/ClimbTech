@@ -203,7 +203,7 @@ body {
 }
 
 .hero-text h1 {
-  margin-top: 20rem;
+  margin-top: 30rem;
   color: #212529;
   font-size: 6.2rem;
   animation: slideDown 1.5s cubic-bezier(0.25, 1, 0.5, 1);

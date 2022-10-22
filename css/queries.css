@@ -159,7 +159,7 @@
   /*    HERO SECTION     */
   /***********************/
   .hero-text h1 {
-    margin-top: 15rem;
+    margin-top: 16rem;
   }
   /***********************/
   /*   VIDEO SECTION     */
@@ -241,6 +241,10 @@
   /***********************/
   /*    HERO SECTION     */
   /***********************/
+  .hero-text h1 {
+    margin-top: 20rem;
+  }
+
   .hero-text a:link,
   .hero-text a:visited {
     font-size: 1.8rem;
