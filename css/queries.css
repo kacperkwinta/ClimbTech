@@ -22,58 +22,6 @@
 /*     BELOW 944px (Tablets)   */
 /*******************************/
 @media (max-width: 59em) {
-  /*****************/
-  /* HERO SECTION  */
-  /*****************/
-  .hero-text h1 {
-    font-size: 4.4rem;
-  }
-
-  /*****************/
-  /*    REUSABLE   */
-  /*****************/
-  .header-secondary {
-    font-size: 3.6rem;
-  }
-
-  .icon {
-    padding: 2rem;
-    border-radius: 50%;
-    background-color: #ced4da;
-    color: #212529;
-    height: 3.2rem;
-    width: 3.2rem;
-    margin-bottom: 1.2rem;
-  }
-
-  /***********************/
-  /*   VIDEO SECTION     */
-  /***********************/
-  .section-video {
-    padding: 4.8rem 0;
-  }
-
-  /***********************/
-  /*  SECTION ABOUT US   */
-  /***********************/
-  .about-container {
-    grid-template-columns: 1fr;
-    padding: 4.8rem;
-  }
-
-  .about-img {
-    width: 60%;
-  }
-
-  /* centering title of the section */
-  .container--big .hidden {
-    text-align: center;
-  }
-
-  .about-container--reverse .about-text {
-    grid-row: 2;
-  }
-
   /******************/
   /*    NAVIGATION  */
   /******************/
@@ -149,6 +97,64 @@
   .main-nav-link:visited {
     font-size: 2rem;
   }
+  /*****************/
+  /* HERO SECTION  */
+  /*****************/
+  .hero-text h1 {
+    font-size: 4.4rem;
+  }
+
+  /*****************/
+  /*    REUSABLE   */
+  /*****************/
+  .header-secondary {
+    font-size: 3.6rem;
+  }
+
+  .icon {
+    padding: 2rem;
+    border-radius: 50%;
+    background-color: #ced4da;
+    color: #212529;
+    height: 3.2rem;
+    width: 3.2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  /***********************/
+  /*   VIDEO SECTION     */
+  /***********************/
+  .section-video {
+    padding: 4.8rem 0;
+  }
+
+  /***********************/
+  /*  SECTION ABOUT US   */
+  /***********************/
+  .about-container {
+    grid-template-columns: 1fr;
+    padding: 4.8rem;
+  }
+
+  .about-img {
+    width: 60%;
+  }
+
+  /* centering title of the section */
+  .container--big .hidden {
+    text-align: center;
+  }
+
+  .about-container--reverse .about-text {
+    grid-row: 2;
+  }
+
+  /*****************/
+  /* OFFER SECTION */
+  /*****************/
+  .section-offer .container--big {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /*******************************/
@@ -213,6 +219,17 @@
   .about-text {
     font-size: 1.8rem;
   }
+
+  /*****************/
+  /* OFFER SECTION */
+  /*****************/
+  .section-offer {
+    padding: 0 3.2rem;
+  }
+
+  .section-offer .container--big {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*************************************/
@@ -267,5 +284,12 @@
 
   .about-img {
     width: 100%;
+  }
+
+  /*****************/
+  /* OFFER SECTION */
+  /*****************/
+  .section-offer {
+    padding: 0;
   }
 }
