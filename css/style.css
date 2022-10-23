@@ -108,7 +108,7 @@ body {
 }
 
 .marg-top-b {
-  margin-top: 9.6rem;
+  margin-top: 6.4rem;
 }
 
 /*******************************/
@@ -356,6 +356,13 @@ body {
 .offer-description {
   font-size: 1.8rem;
   line-height: 1.5;
+}
+
+/*******************************/
+/*       SECTION OFFER         */
+/*******************************/
+.section-contact {
+  padding: 9.6rem 0;
 }
 
 /*******************************/
