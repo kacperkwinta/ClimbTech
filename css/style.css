@@ -335,6 +335,13 @@ body {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.offer-card:hover {
+  transform: translateY(-1rem);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 14px 48px 0px;
 }
 
 .offer-img {
@@ -354,6 +361,7 @@ body {
 }
 
 .offer-description {
+  text-align: center;
   font-size: 1.8rem;
   line-height: 1.5;
 }
