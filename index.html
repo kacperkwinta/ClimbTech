@@ -47,7 +47,7 @@
           <li><a class="main-nav-link" href="#poznaj-nas">Poznaj nas</a></li>
           <li><a class="main-nav-link" href="#oferta">Oferta</a></li>
           <li><a class="main-nav-link" href="#">Realizacje</a></li>
-          <li><a class="main-nav-link nav-cta" href="#">Kontakt</a></li>
+          <li><a class="main-nav-link nav-cta" href="#kontakt">Kontakt</a></li>
         </ul>
       </nav>
 
@@ -262,7 +262,9 @@
             </p>
             <p class="offer-title">Odśnieżanie</p>
             <p class="offer-description">
-              Odśnieżamy każdy rodzaj dachu. Zdajemy sobie sprawę, że zalegający śnieg może doprowadzić do katastrofy budowlanej. Proponujemy jednorazowe odśnieżanie dachu lub abonament.
+              Odśnieżamy każdy rodzaj dachu. Zdajemy sobie sprawę, że zalegający
+              śnieg może doprowadzić do katastrofy budowlanej. Proponujemy
+              jednorazowe odśnieżanie dachu lub abonament.
             </p>
           </div>
         </div>
@@ -272,9 +274,49 @@
     <!-- ************************ -->
     <!--     CONTACT SECTION      -->
     <!-- ************************ -->
-    <section class="section-contact">
-      <div class="container"></div>
+    <section class="section-contact" id="kontakt">
+      <div class="container hidden">
+        <p><ion-icon class="icon" name="call-outline"></ion-icon></p>
+        <h2 class="header-secondary">Bądźmy w kontakcie</h2>
+      </div>
+
+      <div class="container hidden grid grid--2-cols grid--v-center marg-top-b">
+        <div class="contact-text">
+          <p>
+            Chętnie zajmiemy się twoim zleceniem. Zadzwoń do nas lub wyślij
+            wiadomość i opisz jak możemy Ci pomóc.
+          </p>
+          <p class="contact-phone">
+            <ion-icon
+              class="icon-small"
+              name="phone-portrait-outline"
+            ></ion-icon>
+            <a class="contact-link" href="tel:530-657-886">+48 530 657 886</a>
+          </p>
+          <p class="contact-email">
+            <ion-icon class="icon-small" name="mail-outline"></ion-icon>
+            <a class="contact-link" href="mailto:info@climbtech.eu"
+              >info@climbtech.eu</a
+            >
+          </p>
+        </div>
+
+        <img class="contact-img" src="img/contact-img.png" alt="" />
+      </div>
     </section>
+
+    <footer>
+      <p>
+        Wszystkie prawa zastrzeżone &mdash; ClimbTech
+        <span class="year"></span> &copy;
+      </p>
+
+      <p>
+        Made with 🧡 by
+        <a class="author-link" href="https://github.com/kacperkwinta" target="_blank">Kacper Kwinta</a>
+      </p>
+
+    </footer>
 
     <script defer src="js/script.js"></script>
   </body>

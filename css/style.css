@@ -367,10 +367,85 @@ body {
 }
 
 /*******************************/
-/*       SECTION OFFER         */
+/*      SECTION CONTACT        */
 /*******************************/
 .section-contact {
   padding: 9.6rem 0;
+}
+
+.section-contact .icon-small {
+  margin-bottom: 0;
+}
+
+.section-contact .container:nth-child(2) {
+  background-color: #f8f9fa;
+  padding: 4.8rem;
+  border-radius: 8px;
+}
+
+.contact-text {
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+
+.contact-phone {
+  margin: 4.8rem 0;
+
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.contact-email {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.contact-link:link,
+.contact-link:visited {
+  color: #212529;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.contact-link:hover,
+.contact-link:active {
+  text-decoration: none;
+}
+
+.contact-img {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/*******************************/
+/*           FOOTER            */
+/*******************************/
+footer {
+  background-color: #f8f9fa;
+  color: #adb5bd;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 1.2rem;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.author-link:link,
+.author-link:visited {
+  text-decoration: none;
+  color: #adb5bd;
+  transition: all 0.3s ease;
+}
+
+.author-link:hover,
+.author-link:active {
+  text-decoration: none;
+  color: #212529;
 }
 
 /*******************************/

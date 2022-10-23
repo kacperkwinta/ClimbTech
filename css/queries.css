@@ -16,6 +16,19 @@
     height: 40rem;
     width: 80rem;
   }
+
+  /*******************/
+  /* CONTACT SECTION */
+  /*******************/
+  .section-contact .container {
+    grid-template-columns: 1fr;
+    max-width: 70rem;
+  }
+
+  .contact-img {
+    grid-row: 1;
+    width: 100%;
+  }
 }
 
 /*******************************/
@@ -230,6 +243,14 @@
   .section-offer .container--big {
     grid-template-columns: 1fr;
   }
+
+  /*******************/
+  /* CONTACT SECTION */
+  /*******************/
+  .contact-text {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
 }
 
 /*************************************/
@@ -299,5 +320,12 @@
 
   .section-offer {
     padding: 0;
+  }
+
+  /*******************/
+  /* CONTACT SECTION */
+  /*******************/
+  .section-contact .container:nth-child(2) {
+    padding: 3.2rem;
   }
 }

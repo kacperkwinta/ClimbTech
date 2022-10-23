@@ -1,8 +1,8 @@
 ///////////////////////////////////////////////////////////
 // Set current year in foote copyright
-// const yearEl = document.querySelector(".year");
-// const currentYear = new Date().getFullYear();
-// yearEl.textContent = currentYear;
+const yearEl = document.querySelector(".year");
+const currentYear = new Date().getFullYear();
+yearEl.textContent = currentYear;
 
 ///////////////////////////////////////////////////////////
 // Make mobile navigation work
