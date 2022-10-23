@@ -278,6 +278,10 @@
   /***********************/
   /*  SECTION ABOUT US   */
   /***********************/
+  .section-about .container--big {
+    padding: 0 2.4rem;
+  }
+
   .about-container {
     padding: 0;
   }
@@ -289,6 +293,10 @@
   /*****************/
   /* OFFER SECTION */
   /*****************/
+  .section-offer .container--big {
+    padding: 0 2.4rem;
+  }
+
   .section-offer {
     padding: 0;
   }
