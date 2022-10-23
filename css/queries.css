@@ -251,6 +251,14 @@
     font-size: 2rem;
     line-height: 1.5;
   }
+
+  /**********/
+  /* FOOTER */
+  /**********/
+  footer {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
 }
 
 /*************************************/
