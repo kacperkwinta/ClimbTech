@@ -59,6 +59,10 @@ body {
   gap: 4.8rem;
 }
 
+.grid--1-col {
+  grid-template-columns: 1fr;
+}
+
 .grid--2-cols {
   grid-template-columns: 1fr 1fr;
 }
@@ -336,11 +340,11 @@ body {
   overflow: hidden;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   position: relative;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
 }
 
 .offer-card:hover {
-  transform: translateY(-1rem);
+  transform: translateY(-1.5rem);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 14px 48px 0px;
 }
 
@@ -367,6 +371,32 @@ body {
 }
 
 /*******************************/
+/*     SECTION REALIZATIONS    */
+/*******************************/
+.section-realizations {
+  padding: 9.6rem 0;
+  background-image: url(../img/stacked-peaks-haikei.svg);
+  background-size: cover;
+}
+
+.realizations-title {
+  font-size: 2.4rem;
+}
+
+.realizations-img {
+  display: block;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.realizations-desc {
+  max-width: 80rem;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+/*******************************/
 /*      SECTION CONTACT        */
 /*******************************/
 .section-contact {
@@ -378,7 +408,7 @@ body {
 }
 
 .section-contact .container:nth-child(2) {
-  background-color: #f8f9fa;
+  background-color: #f1f3f5;
   padding: 4.8rem;
   border-radius: 8px;
 }
@@ -453,10 +483,12 @@ footer {
 /*******************************/
 .hidden {
   opacity: 0;
+  transform: translateY(-0.5rem);
   transition: all 1s;
 }
 
 .show {
+  transform: translateY(0);
   opacity: 1;
 }
 
