@@ -175,12 +175,6 @@
 /*******************************/
 @media (max-width: 60em) {
   /***********************/
-  /*    HERO SECTION     */
-  /***********************/
-  .hero-text h1 {
-    margin-top: 16rem;
-  }
-  /***********************/
   /*   VIDEO SECTION     */
   /***********************/
   .yt-video {
@@ -320,13 +314,6 @@
 /*     BELOW 400px (Smartphones)   */
 /***********************************/
 @media (max-width: 25em) {
-  /***********************/
-  /*    HERO SECTION     */
-  /***********************/
-  .hero-text h1 {
-    margin-top: 20rem;
-  }
-
   .hero-text a:link,
   .hero-text a:visited {
     font-size: 1.8rem;

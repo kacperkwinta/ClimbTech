@@ -211,9 +211,11 @@ body {
   background-repeat: no-repeat no-repeat;
   background-position-y: 70%;
   background-size: cover;
+  filter: brightness(0.95);
 
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -222,7 +224,7 @@ body {
 }
 
 .hero-text h1 {
-  margin-top: 30rem;
+  margin-top: 0;
   color: #212529;
   font-size: 6.2rem;
   animation: slideDown 1.5s cubic-bezier(0.25, 1, 0.5, 1);
