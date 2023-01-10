@@ -150,7 +150,7 @@
   }
 
   .about-img {
-    width: 60%;
+    width: 70%;
   }
 
   /* centering title of the section */
@@ -185,6 +185,19 @@
   /***********************/
   .yt-video {
     width: 60rem;
+  }
+}
+
+/*******************************/
+/*     BELOW 800px (Tablets)   */
+/*******************************/
+@media (max-width: 50em) {
+  /*****************/
+  /* OFFER SECTION */
+  /*****************/
+  .section-offer .container--big {
+    grid-template-columns: 1fr;
+    padding: 0 12.4rem;
   }
 }
 
@@ -242,6 +255,7 @@
 
   .section-offer .container--big {
     grid-template-columns: 1fr;
+    padding: 0 4.8rem;
   }
 
   /*******************/
@@ -277,6 +291,28 @@
   /***********************/
   .section-hero {
     background-position-x: 60%;
+  }
+
+  /***********************/
+  /*  SECTION ABOUT US   */
+  /***********************/
+  .section-about .container--big {
+    padding: 0 2.4rem;
+  }
+
+  .about-img {
+    width: 100%;
+  }
+
+  /*****************/
+  /* OFFER SECTION */
+  /*****************/
+  .section-offer .container--big {
+    padding: 0 4.8rem;
+  }
+
+  .section-offer {
+    padding: 0;
   }
 }
 
