@@ -115,6 +115,10 @@ body {
   margin-top: 6.4rem;
 }
 
+.fw-500 {
+  font-weight: 500;
+}
+
 /*******************************/
 /*            HEADER           */
 /*******************************/
@@ -131,7 +135,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
 
   animation: slideDown 1.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
@@ -344,7 +348,7 @@ body {
 }
 
 .offer-card:hover {
-  transform: translateY(-1.5rem);
+  transform: translateY(-1rem);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 14px 48px 0px;
 }
 
