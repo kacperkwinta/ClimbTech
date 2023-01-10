@@ -3,39 +3,6 @@
 /**************************/
 @media (max-width: 69em) {
   /******************/
-  /*  HERO SECTION  */
-  /******************/
-  .hero-text h1 {
-    font-size: 5.2rem;
-  }
-
-  /******************/
-  /* VIDEO SECTION  */
-  /******************/
-  .yt-video {
-    height: 40rem;
-    width: 80rem;
-  }
-
-  /*******************/
-  /* CONTACT SECTION */
-  /*******************/
-  .section-contact .container {
-    grid-template-columns: 1fr;
-    max-width: 70rem;
-  }
-
-  .contact-img {
-    grid-row: 1;
-    width: 100%;
-  }
-}
-
-/*******************************/
-/*     BELOW 944px (Tablets)   */
-/*******************************/
-@media (max-width: 59em) {
-  /******************/
   /*    NAVIGATION  */
   /******************/
   .header {
@@ -110,6 +77,40 @@
   .main-nav-link:visited {
     font-size: 2rem;
   }
+
+  /******************/
+  /*  HERO SECTION  */
+  /******************/
+  .hero-text h1 {
+    font-size: 5.2rem;
+  }
+
+  /******************/
+  /* VIDEO SECTION  */
+  /******************/
+  .yt-video {
+    height: 40rem;
+    width: 80rem;
+  }
+
+  /*******************/
+  /* CONTACT SECTION */
+  /*******************/
+  .section-contact .container {
+    grid-template-columns: 1fr;
+    max-width: 70rem;
+  }
+
+  .contact-img {
+    grid-row: 1;
+    width: 100%;
+  }
+}
+
+/*******************************/
+/*     BELOW 944px (Tablets)   */
+/*******************************/
+@media (max-width: 59em) {
   /*****************/
   /* HERO SECTION  */
   /*****************/
