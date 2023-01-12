@@ -434,7 +434,7 @@ body {
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
 
-  animation: showModal 0.5s ease;
+  animation: showModal 0.3s ease;
 }
 
 .close-modal {
@@ -480,7 +480,7 @@ body {
 @keyframes showModal {
   0% {
     opacity: 0;
-    filter: blur(10px);
+    filter: blur(5px);
   }
   100% {
     opacity: 1;
