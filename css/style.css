@@ -387,8 +387,7 @@ body {
   text-align: center;
 }
 
-.realization-heading,
-.modal-heading {
+.realization-heading {
   font-size: 3rem;
   margin-bottom: 1.2rem;
 }
@@ -475,6 +474,11 @@ body {
 
 .hidden-modal {
   display: none;
+}
+
+.modal-heading {
+  font-size: 2.4rem;
+  margin: 4.8rem 0 2.4rem 0;
 }
 
 .modal-p {
