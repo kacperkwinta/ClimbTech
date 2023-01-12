@@ -430,8 +430,8 @@ body {
 
   background-color: white;
   padding: 6rem;
-  border-radius: 5px;
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   z-index: 10;
 
   animation: showModal 0.3s ease;
@@ -440,7 +440,7 @@ body {
 .close-modal {
   position: absolute;
   top: 1.2rem;
-  right: 2rem;
+  right: 1.2rem;
   font-size: 5rem;
   color: #333;
   cursor: pointer;
