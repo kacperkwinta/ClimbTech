@@ -68,13 +68,16 @@ const btnsOpenModal = document.querySelectorAll(".realization-btn");
 const showModal = function () {
   modal.classList.remove("hidden-modal");
   overlay.classList.remove("hidden-modal");
+  // back to top of modal
   modal.scrollTo({ top: 0, behavior: "smooth" });
+  // prevent body scrolling
   document.querySelector("body").style.overflow = "hidden";
 };
 
 const closeModal = function () {
   modal.classList.add("hidden-modal");
   overlay.classList.add("hidden-modal");
+  // activate body scrolling
   document.querySelector("body").style.overflow = "auto";
 };
 
