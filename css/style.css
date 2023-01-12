@@ -444,8 +444,22 @@ body {
   font-size: 5rem;
   color: #333;
   cursor: pointer;
+  transition: all 0.3s ease;
+
   border: none;
-  background: none;
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  background-color: #e9ecef;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-modal:hover,
+.close-modal:active {
+  background-color: #ced4da;
 }
 
 .overlay {
