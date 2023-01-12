@@ -68,11 +68,13 @@ const btnsOpenModal = document.querySelectorAll(".realization-btn");
 const showModal = function () {
   modal.classList.remove("hidden-modal");
   overlay.classList.remove("hidden-modal");
+  document.querySelector("body").style.overflow = "hidden";
 };
 
 const closeModal = function () {
   modal.classList.add("hidden-modal");
   overlay.classList.add("hidden-modal");
+  document.querySelector("body").style.overflow = "auto";
 };
 
 // show modal
