@@ -380,7 +380,6 @@ body {
   background-image: url(../img/stacked-peaks-haikei.svg);
   background-repeat: no-repeat no-repeat;
   background-size: cover;
-  position: relative;
 }
 
 .realization-box {
@@ -421,7 +420,7 @@ body {
 /* -------------------------- */
 /* CLASSES TO MAKE MODAL WORK */
 .modal {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
