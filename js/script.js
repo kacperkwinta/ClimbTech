@@ -1,3 +1,5 @@
+"use strict";
+
 ///////////////////////////////////////////////////////////
 // Set current year in foote copyright
 const yearEl = document.querySelector(".year");
@@ -45,7 +47,7 @@ allLinks.forEach(function (link) {
 //////////////////// animations
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
+    // console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
     } else {
@@ -56,3 +58,35 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
+
+//////////////////// modal window in realization section
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
+const btnsCloseModal = document.querySelector(".close-modal");
+const btnsOpenModal = document.querySelectorAll(".realization-btn");
+
+const showModal = function () {
+  modal.classList.remove("hidden-modal");
+  overlay.classList.remove("hidden-modal");
+};
+
+const closeModal = function () {
+  modal.classList.add("hidden-modal");
+  overlay.classList.add("hidden-modal");
+};
+
+// show modal
+for (let i = 0; i < btnsOpenModal.length; i++) {
+  btnsOpenModal[i].addEventListener("click", showModal);
+}
+
+// close modal
+btnsCloseModal.addEventListener("click", closeModal);
+overlay.addEventListener("click", closeModal);
+
+// close modal by keyboard
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape" && !modal.classList.contains("hidden-modal")) {
+    closeModal();
+  }
+});
