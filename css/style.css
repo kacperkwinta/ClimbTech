@@ -378,8 +378,8 @@ body {
 .section-realizations {
   padding: 9.6rem 0;
   background-image: url(../img/stacked-peaks-haikei.svg);
-  background-repeat: no-repeat no-repeat;
   background-size: cover;
+  background-repeat: no-repeat no-repeat;
 }
 
 .realization-box {
@@ -433,6 +433,8 @@ body {
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
+
+  animation: showModal 0.5s ease;
 }
 
 .close-modal {
@@ -472,6 +474,18 @@ body {
   width: 100%;
   border-radius: 8px;
   margin: 2.4rem 0;
+}
+
+/*** MODAL ANIMATION ***/
+@keyframes showModal {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
 }
 
 /*******************************/
