@@ -335,11 +335,14 @@ body {
 /*******************************/
 .section-offer {
   padding: 9.6rem 0;
+  background-image: url(../img/section-offer-bg.svg);
+  background-size: cover;
 }
 
 .offer-card {
   border-radius: 8px;
   overflow: hidden;
+  background-color: #fff;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   position: relative;
   transition: all 0.1s ease;
@@ -377,9 +380,8 @@ body {
 /*******************************/
 .section-realizations {
   padding: 9.6rem 0;
-  background-image: url(../img/stacked-peaks-haikei.svg);
+  background-image: url(../img/section-realizations-bg.svg);
   background-size: cover;
-  background-repeat: no-repeat no-repeat;
 }
 
 .realization-box {
@@ -498,7 +500,7 @@ body {
 @keyframes showModal {
   0% {
     opacity: 0;
-    filter: blur(5px);
+    filter: blur(3px);
   }
   100% {
     opacity: 1;
@@ -594,7 +596,7 @@ footer {
 .hidden {
   opacity: 0;
   transform: translateY(-0.5rem);
-  transition: all 1s;
+  transition: all 1s ease;
 }
 
 .show {

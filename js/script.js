@@ -44,6 +44,7 @@ allLinks.forEach(function (link) {
   });
 });
 
+///////////////////////////////
 //////////////////// animations
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -59,6 +60,7 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 
+////////////////////////////////////////////////////////
 //////////////////// modal window in realization section
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
@@ -69,7 +71,7 @@ const showModal = function () {
   modal.classList.remove("hidden-modal");
   overlay.classList.remove("hidden-modal");
   // back to top of modal
-  modal.scrollTo({ top: 0, behavior: "smooth" });
+  modal.scrollTo({ top: 0});
   // prevent body scrolling
   document.querySelector("body").style.overflow = "hidden";
 };
