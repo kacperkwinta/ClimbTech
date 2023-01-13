@@ -129,6 +129,18 @@ function changeModalContent(heading, p1, img1, p2, img2, p3) {
 
 // Change the content of the modal when the second realization button is clicked
 
+// Realization 1
+openModalBtn[0].addEventListener("click", function () {
+  changeModalContent(
+    "Czyszczenie elewacji bloku",
+    "Czyszczenie elewacji bloku 1",
+    "img/realization-modal-before-1.webp",
+    "Czyszczenie elewacji 2",
+    "img/realization-modal-after-1.webp",
+    "Czyszczenie elewacji bloku 3"
+  );
+});
+
 // Realization 2
 openModalBtn[1].addEventListener("click", function () {
   changeModalContent(
