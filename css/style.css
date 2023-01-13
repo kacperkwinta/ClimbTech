@@ -384,13 +384,17 @@ body {
   background-size: cover;
 }
 
+.section-realizations .container--big {
+  gap: 8rem;
+}
+
 .realization-box {
   max-width: 450px;
   text-align: center;
 }
 
 .realization-heading {
-  font-size: 3rem;
+  font-size: 2.4rem;
   margin-bottom: 1.2rem;
 }
 

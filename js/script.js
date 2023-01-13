@@ -71,7 +71,7 @@ const showModal = function () {
   modal.classList.remove("hidden-modal");
   overlay.classList.remove("hidden-modal");
   // back to top of modal
-  modal.scrollTo({ top: 0});
+  modal.scrollTo({ top: 0 });
   // prevent body scrolling
   document.querySelector("body").style.overflow = "hidden";
 };
@@ -97,4 +97,70 @@ document.addEventListener("keydown", function (e) {
   if (e.key === "Escape" && !modal.classList.contains("hidden-modal")) {
     closeModal();
   }
+});
+
+/////////////////////
+// OPEN MODAL BUTTONS
+const openModalBtn = document.querySelectorAll(".realization-btn");
+
+/////////////////
+// MODAL ELEMENTS
+// one heading
+const modalHeading = document.querySelector(".modal-heading");
+// three paragraphs
+const modalParagraphs = document.getElementsByClassName("modal-p");
+// two imgs
+const modalImg1 = document.getElementById("modal-img-1");
+const modalImg2 = document.getElementById("modal-img-2");
+
+////////////////////////////////////////////////////////////////////
+// CHANGE CONTENT IN MODAL, DEPEND OF WHAT REALIZATION CLICKED (1-4)
+////////////////////////////////////////////////////////////////////
+
+// Function to change the content of the modal
+function changeModalContent(heading, p1, img1, p2, img2, p3) {
+  modalHeading.textContent = heading;
+  modalParagraphs[0].textContent = p1;
+  modalImg1.src = img1;
+  modalParagraphs[1].textContent = p2;
+  modalImg2.src = img2;
+  modalParagraphs[2].textContent = p3;
+}
+
+// Change the content of the modal when the second realization button is clicked
+
+// Realization 2
+openModalBtn[1].addEventListener("click", function () {
+  changeModalContent(
+    "Czyszczenie ceglanej elewacji",
+    "Czyszczenie ceglanej elewacji 1",
+    "img/realization-modal-before-2.webp",
+    "Czyszczenie ceglanej elewacji 2",
+    "img/realization-modal-after-2.webp",
+    "Czyszczenie ceglanej elewacji 3"
+  );
+});
+
+// Realization 3
+openModalBtn[2].addEventListener("click", function () {
+  changeModalContent(
+    "Malowanie dachu",
+    "Malowanie dachu 1",
+    "img/realization-modal-before-3.webp",
+    "Malowanie dachu 2",
+    "img/realization-modal-after-3.webp",
+    "Malowanie dachu 3"
+  );
+});
+
+// Realization 4
+openModalBtn[3].addEventListener("click", function () {
+  changeModalContent(
+    "Malowanie kościoła",
+    "Malowanie kościoła 1",
+    "img/realization-modal-before-4.webp",
+    "Montaż pleksi 1",
+    "img/realization-modal-after-4.webp",
+    "Lorem ipsum 3"
+  );
 });
