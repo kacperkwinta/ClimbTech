@@ -273,6 +273,10 @@
   /************************/
   /* REALIZATIONS SECTION */
   /************************/
+  .slider {
+    height: 35rem;
+  }
+
   .modal {
     min-width: 95%;
     min-height: 85vh;
