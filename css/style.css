@@ -388,6 +388,70 @@ body {
   gap: 8rem;
 }
 
+/****************/
+/*    SLIDER    */
+/****************/
+.slider {
+  margin: 0 auto;
+  width: 100%;
+  height: 50rem;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.slider img.active {
+  opacity: 1;
+}
+
+/* przyciski */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border: none;
+  font-size: 2.4rem;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #ced4da;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+/* ********** */
+/* SLIDER END */
+/* ********** */
+
 .realization-box {
   max-width: 450px;
   text-align: center;
