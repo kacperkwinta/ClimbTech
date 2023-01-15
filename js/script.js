@@ -113,16 +113,14 @@ const modalParagraphs = document.getElementsByClassName("modal-p");
 const modalImg1 = document.getElementById("modal-img-1");
 const modalImg2 = document.getElementById("modal-img-2");
 
-////////////////////////////////////////////////////////////////////
-// CHANGE CONTENT IN MODAL, DEPEND OF WHAT REALIZATION CLICKED (1-4)
-////////////////////////////////////////////////////////////////////
-
 // Function to change the content of the modal
 function changeModalContent(heading, p1, img1, p2, img2, p3) {
   modalHeading.textContent = heading;
   modalParagraphs[0].textContent = p1;
+  modalImg1.src = ""; // Dodano
   modalImg1.src = img1;
   modalParagraphs[1].textContent = p2;
+  modalImg2.src = ""; // Dodano
   modalImg2.src = img2;
   modalParagraphs[2].textContent = p3;
 }
@@ -139,6 +137,7 @@ openModalBtn[0].addEventListener("click", function () {
     "img/realization-modal-after-1.webp",
     "Czyszczenie elewacji bloku 3"
   );
+  modal.classList.add("animate");
 });
 
 // Realization 2
