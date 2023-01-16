@@ -111,6 +111,10 @@ body {
   margin-top: 6.4rem;
 }
 
+.marg-btm-s {
+  margin-bottom: 2rem;
+}
+
 .fw-500 {
   font-weight: 500;
 }
@@ -448,9 +452,40 @@ body {
 .next {
   right: 10px;
 }
+
+/* link to realizacje.html */
+.realizations-link:link,
+.realizations-link:visited {
+  display: inline-block;
+  margin-top: 2.4rem;
+  font-size: 1.8rem;
+  text-decoration: none;
+  padding: 1.2rem 2.4rem;
+  background-color: #212529;
+  color: #f8f9fa;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.realizations-p {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.realizations-link:hover,
+.realizations-link:active {
+  background-color: #495057;
+}
+
 /* ********** */
 /* SLIDER END */
 /* ********** */
+
+/* -----realizacje.html------ */
+.realizations-desc {
+  font-size: 1.8rem;
+}
 
 .realization-box {
   max-width: 450px;
@@ -486,7 +521,6 @@ body {
   background-color: #495057;
 }
 
-/* -------------------------- */
 /* CLASSES TO MAKE MODAL WORK */
 .modal {
   position: fixed;
@@ -563,6 +597,7 @@ body {
   border-radius: 8px;
   margin: 2.4rem 0;
 }
+/* -----realizacje.html------ */
 
 /*** MODAL ANIMATION ***/
 @keyframes showModal {
@@ -594,7 +629,7 @@ body {
 }
 
 .contact-text {
-  font-size: 2.4rem;
+  font-size: 2rem;
   line-height: 1.5;
 }
 

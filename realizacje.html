@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+    <meta name="theme-color" content="#fff" />
+
+    <meta name="keywords"
+      content="prace wysokościowe, alpinistyczne, czyszczenie przemysłowe, malowanie dachu, montaż na wysokości, mycie dachów, usługi alpinistyczne, certyfikowani pracownicy, atestowany sprzęt" />
+
+    <meta name="description"
+      content="Firma ClimbTech specjalizuje się w pracach wysokościowych i alpinistycznych. Posiadamy wykwalifikowany zespół pracowników, którzy posiadają kursy, szkolenia i badania wysokościowe oraz pracują na atestowanym sprzęcie renomowanych marek. Nasza oferta obejmuje czyszczenie przemysłowe, malowanie dachu, montaż na wysokości, mycie dachów i elewacji, montaż siatek i kolców na ptaki oraz pozostałe prace alpinistyczne. Gwarantujemy najwyższą jakość usług i indywidualne podejście do każdego zlecenia. Skontaktuj się z nami i zleć nam swoje zadanie." />
+
+    <title>ClimbTech &mdash; realizacje</title>
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <!-- ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+  </head>
+
+  <body>
+    <!-- ************************ -->
+    <!--        NAVIGATION        -->
+    <!-- ************************ -->
+    <header class="header">
+      <a href="index.html">
+        <img src="img/logo.png" class="logo" alt="ClimbTech logo" />
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="index.html">Start</a></li>
+          <li><a class="main-nav-link" href=#poznaj-nas">Poznaj nas</a></li>
+          <li><a class="main-nav-link" href="#dlaczego-my">Dlaczego my?</a></li>
+          <li><a class="main-nav-link" href="#oferta">Oferta</a></li>
+          <li><a class="main-nav-link" href="#realizacje">Realizacje</a></li>
+
+          <li><a class="main-nav-link nav-cta" href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <!-- ************************ -->
+    <!--   REALIZATIONS SECTION   -->
+    <!-- ************************ -->
+    <section class="section-realizations" id="realizacje">
+      <div class="container hidden text-center">
+        <p><ion-icon class="icon" name="hammer-outline"></ion-icon></p>
+        <h2 class="header-secondary marg-btm-s">Nasze realizacje</h2>
+        <p class="realizations-desc">Poniżej przedstawiamy galerię z wybranych usług, które wykonaliśmy na przestrzeni
+          ostatnich lat.</p>
+      </div>
+
+      <div class="container--big grid grid--2-cols grid--h-center marg-top-b">
+        <div class="realization-box hidden">
+          <h3 class="realization-heading">Czyszczenie elewacji bloku</h3>
+          <img class="realization-img" src="img/realization-1.webp" alt="" />
+          <button class="realization-btn">Zobacz szczegóły</button>
+        </div>
+
+        <div class="realization-box hidden">
+          <h3 class="realization-heading">Czyszczenie ceglanej elewacji</h3>
+          <img class="realization-img" src="img/realization-2.webp" alt="" />
+          <button class="realization-btn">Zobacz szczegóły</button>
+        </div>
+
+        <div class="realization-box hidden">
+          <h3 class="realization-heading">Malowanie dachu</h3>
+          <img class="realization-img" src="img/realization-3.webp" alt="" />
+          <button class="realization-btn">Zobacz szczegóły</button>
+        </div>
+
+        <div class="realization-box hidden">
+          <h3 class="realization-heading">Inne prace</h3>
+          <img class="realization-img" src="img/realization-4.webp" alt="" />
+          <button class="realization-btn">Zobacz szczegóły</button>
+        </div>
+
+        <!-- MODAL WINDOW -->
+        <div class="modal hidden-modal">
+          <button class="close-modal">&times;</button>
+          <h3 class="modal-heading"></h3>
+
+          <p class="modal-p"></p>
+
+          <img class="modal-img" id="modal-img-1" src="" alt="" />
+
+          <p class="modal-p"></p>
+
+          <img class="modal-img" id="modal-img-2" src="" alt="" />
+
+          <p class="modal-p"></p>
+
+          <img class="modal-img" id="modal-img-3" src="" alt="" />
+
+        </div>
+
+        <div class="overlay hidden-modal"></div>
+        <!-- MODAL WINDOW END -->
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        Wszystkie prawa zastrzeżone &mdash; ClimbTech
+        <span class="year"></span> &copy;
+      </p>
+
+      <p>
+        Coded with ❤️ by
+        <a href="https://github.com/kacperkwinta" class="author-link">Kacper Kwinta</a>
+      </p>
+    </footer>
+
+    <script defer src="js/general.js"></script>
+    <script defer src="js/modal.js"></script>
+  </body>
+
+</html>
