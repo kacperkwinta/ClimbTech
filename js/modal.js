@@ -53,66 +53,77 @@ const modalImg2 = document.getElementById("modal-img-2");
 const modalImg3 = document.getElementById("modal-img-3");
 
 // Function to change the content of the modal
-function changeModalContent(heading, p1, img1, p2, img2, p3, img3) {
+function changeModalContent(heading, p1, img1, img2, img3) {
   modalHeading.textContent = heading;
   modalParagraphs[0].textContent = p1;
   modalImg1.src = "";
   modalImg1.src = img1;
-  modalParagraphs[1].textContent = p2;
   modalImg2.src = "";
   modalImg2.src = img2;
-  modalParagraphs[2].textContent = p3;
   modalImg3.src = "";
   modalImg3.src = img3;
 }
 
-// Change the content of the modal when the second realization button is clicked
-
 // Realization 1
 openModalBtn[0].addEventListener("click", function () {
   changeModalContent(
-    "Czyszczenie elewacji bloku",
-    "Czyszczenie elewacji bloku 1",
-    "img/realization-modal-before-1.webp",
-    "Czyszczenie elewacji 2",
-    "img/realization-modal-after-1.webp",
-    "Czyszczenie elewacji bloku 3"
+    "Wymiana separatora gipsu",
+    "Odkręcenie i wycięcie części dachu i ponowne zamontowanie z wykorzystaniem technik alpinistycznych, prace służyły do wymiany separatora gipsu.",
+    "img/realizations/realization-1.webp",
+    "img/realizations/first-modal-img-1.webp",
+    "img/realizations/first-modal-img-2.webp"
   );
-  modal.classList.add("animate");
 });
 
 // Realization 2
 openModalBtn[1].addEventListener("click", function () {
   changeModalContent(
-    "Czyszczenie ceglanej elewacji",
-    "Czyszczenie ceglanej elewacji 1",
-    "img/realization-modal-before-2.webp",
-    "Czyszczenie ceglanej elewacji 2",
-    "img/realization-modal-after-2.webp",
-    "Czyszczenie ceglanej elewacji 3"
+    "Mycie elewacji",
+    "Mycie i impregnacja elewacji dla Spółdzielni Mieszkaniowej - mycie z wykorzystaniem chemii i gorącej wody.",
+    "img/realizations/realization-2.webp",
+    "img/realizations/second-modal-img-1.webp",
+    "img/realizations/second-modal-img-2.webp"
   );
 });
 
 // Realization 3
 openModalBtn[2].addEventListener("click", function () {
   changeModalContent(
-    "Malowanie dachu",
-    "Malowanie dachu 1",
-    "img/realization-modal-before-3.webp",
-    "Malowanie dachu 2",
-    "img/realization-modal-after-3.webp",
-    "Malowanie dachu 3"
+    "Wciąganie jaccuzi",
+    "Wciąganie przy pomocy technik linowych jaccuzi wraz z wykonaniem i zaprojektowaniem odpowiedniego żurawia.",
+    "img/realizations/realization-3.webp",
+    "img/realizations/third-modal-img-1.webp",
+    "img/realizations/third-modal-img-2.webp"
   );
 });
 
 // Realization 4
 openModalBtn[3].addEventListener("click", function () {
   changeModalContent(
-    "Malowanie kościoła",
-    "Malowanie kościoła 1",
-    "img/realization-modal-before-4.webp",
-    "Montaż pleksi 1",
-    "img/realization-modal-after-4.webp",
-    "Lorem ipsum 3"
+    "Odkurzanie konstrukcji",
+    "Odkurzanie konstrukcji dachu wraz z słupami i ścianami",
+    "img/realizations/realization-4.webp",
+    "img/realizations/fourth-modal-img-1.webp",
+    "img/realizations/fourth-modal-img-2.webp"
+  );
+});
+
+openModalBtn[4].addEventListener("click", function () {
+  changeModalContent(
+    "Malowanie natryskowe dachu szkoły",
+    "",
+    "img/realizations/realization-5.webp",
+    "img/realizations/fifth-modal-img-1.webp",
+    "img/realizations/fifth-modal-img-2.webp"
+  );
+});
+
+openModalBtn[5].addEventListener("click", function () {
+  changeModalContent(
+    "Chemiczne czyszczenie elewacji",
+    "Chemiczne czyszczenie elewacji z cegły przy użyciu chemii i gorącej wody z wykorzystaniem technik alpinistycznych",
+    "img/realizations/realization-6.webp",
+    "img/realizations/sixth-modal-img-1.webp",
+    "img/realizations/sixth-modal-img-2.webp"
   );
 });
