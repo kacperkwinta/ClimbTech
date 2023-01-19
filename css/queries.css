@@ -199,7 +199,7 @@
   .header-realizations-desc {
     font-size: 2rem;
   }
-  
+
   .container--big .realization-img {
     width: 100%;
   }
@@ -231,7 +231,7 @@
   /*   VIDEO SECTION     */
   /***********************/
   .yt-video {
-    width: 40rem;
+    width: 44rem;
     height: 30rem;
   }
 
@@ -324,6 +324,19 @@
 
   .section-offer {
     padding: 0;
+  }
+}
+
+/***********************************/
+/*     BELOW 450px (Smartphones)   */
+/***********************************/
+@media (max-width: 28.125em) {
+  /***********************/
+  /*   VIDEO SECTION     */
+  /***********************/
+  .yt-video {
+    width: 40rem;
+    height: 30rem;
   }
 }
 
