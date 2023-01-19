@@ -93,16 +93,6 @@
     width: 80rem;
   }
 
-  /************************/
-  /* REALIZATIONS SECTION */
-  /************************/
-  .modal {
-    width: 100vw;
-    height: 100vh;
-    overflow-y: auto;
-    padding: 3rem;
-  }
-
   /*******************/
   /* CONTACT SECTION */
   /*******************/
@@ -205,11 +195,9 @@
     padding: 0 12.4rem;
   }
 
-  /************************/
-  /* REALIZATIONS SECTION */
-  /************************/
-  .section-realizations .container--big {
-    grid-template-columns: 1fr;
+  /* realizacje.html */
+  .container--big .realization-img {
+    width: 100%;
   }
 }
 
@@ -275,13 +263,6 @@
   /************************/
   .slider {
     height: 35rem;
-  }
-
-  .modal {
-    min-width: 95%;
-    min-height: 85vh;
-    overflow-y: auto;
-    padding: 2.4rem;
   }
 
   /*******************/
@@ -390,5 +371,10 @@
   /*******************/
   .section-contact .container:nth-child(2) {
     padding: 3.2rem;
+  }
+
+  /* realizacje.html */
+  .section-realizations .container--big {
+    padding: 0 1.2rem;
   }
 }

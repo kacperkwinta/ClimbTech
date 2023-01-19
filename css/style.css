@@ -4,7 +4,6 @@
 
 - SPACING SYSTEM (px) 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 
 
-
 */
 
 /*******************************/
@@ -218,7 +217,6 @@ body {
 
 .hero-text {
   padding: 2.4rem;
-  
 }
 
 .hero-text h1 {
@@ -584,8 +582,31 @@ footer {
 }
 
 /* -----realizacje.html------ */
-.realizations-desc {
-  font-size: 1.8rem;
+.header-realizations-desc {
+  font-size: 2.8rem;
+  font-weight: 500;
 }
 
+.section-realizations .container--big {
+  gap: 2.4rem;
+}
+
+.realization-desc {
+  font-size: 2rem;
+  text-align: center;
+  max-width: 80rem;
+}
+
+.realization-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.realization-img {
+  max-width: 60rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
 /* -----realizacje.html------ */
