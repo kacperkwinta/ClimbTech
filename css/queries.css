@@ -196,6 +196,10 @@
   }
 
   /* realizacje.html */
+  .header-realizations-desc {
+    font-size: 2rem;
+  }
+  
   .container--big .realization-img {
     width: 100%;
   }
