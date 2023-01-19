@@ -483,7 +483,7 @@ body {
 /*      SECTION CONTACT        */
 /*******************************/
 .section-contact {
-  padding: 9.6rem 0;
+  padding:0 0 9.6rem 0;
 }
 
 .section-contact .icon-small {
