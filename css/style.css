@@ -394,7 +394,7 @@ body {
 /****************/
 .slider {
   margin: 0 auto;
-  max-width: 80rem;
+  max-width: 65rem;
   height: 60rem;
   overflow: hidden;
   position: relative;
