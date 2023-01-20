@@ -211,10 +211,10 @@ body {
   background-size: cover;
   background-position-y: 1%;
 
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center; */
+  align-items:flex-start;
+  text-align: center;
 }
 
 .hero-text {
@@ -223,7 +223,7 @@ body {
 }
 
 .hero-text h1 {
-  margin-top: 20rem;
+  margin-top: 10rem;
   color: #f8f9fa;
   font-size: 6.2rem;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
