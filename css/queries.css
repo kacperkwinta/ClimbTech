@@ -2,396 +2,411 @@
 /* BELOW 1100PX (Laptops) */
 /**************************/
 @media (max-width: 69em) {
-  /******************/
-  /*    NAVIGATION  */
-  /******************/
-  .header {
-    height: 6rem;
-  }
+	/******************/
+	/*    NAVIGATION  */
+	/******************/
+	.header {
+		height: 6rem;
+	}
 
-  .btn-mobile-nav {
-    display: block;
-    z-index: 9999;
-    background-color: transparent;
-  }
+	.btn-mobile-nav {
+		display: block;
+		z-index: 9999;
+		background-color: transparent;
+	}
 
-  .icon-mobile-nav {
-    width: 4.8rem;
-    height: 4.8rem;
-    color: #333;
-  }
+	.icon-mobile-nav {
+		width: 4.8rem;
+		height: 4.8rem;
+		color: #333;
+	}
 
-  .main-nav {
-    background-color: rgba(255, 255, 255, 0.9);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(5px);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    transform: translateX(100%);
+	.main-nav {
+		background-color: rgba(255, 255, 255, 0.9);
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(5px);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		transform: translateX(100%);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
-    /* animation from this site --> https://easings.net/#easeInOutQuint */
-    transition: all 0.5s cubic-bezier(0.83, 0, 0.17, 1);
+		/* animation from this site --> https://easings.net/#easeInOutQuint */
+		transition: all 0.5s cubic-bezier(0.83, 0, 0.17, 1);
 
-    /* Hide navigation */
-    /* Allows NO transitions at all! */
-    /* display: none; */
+		/* Hide navigation */
+		/* Allows NO transitions at all! */
+		/* display: none; */
 
-    /* 1) Hide it visually */
-    opacity: 0;
+		/* 1) Hide it visually */
+		opacity: 0;
 
-    /* 2) Make it unaccessible to mouse and keyboard */
-    pointer-events: none;
+		/* 2) Make it unaccessible to mouse and keyboard */
+		pointer-events: none;
 
-    /* 3) Hide it from screen readers */
-    visibility: hidden;
-  }
+		/* 3) Hide it from screen readers */
+		visibility: hidden;
+	}
 
-  .nav-open .main-nav {
-    opacity: 1;
-    pointer-events: auto;
-    visibility: visible;
-    transform: translateX(0%);
-  }
-  .nav-open .icon-mobile-nav[name="menu-outline"] {
-    display: none;
-  }
+	.nav-open .main-nav {
+		opacity: 1;
+		pointer-events: auto;
+		visibility: visible;
+		transform: translateX(0%);
+	}
+	.nav-open .icon-mobile-nav[name="menu-outline"] {
+		display: none;
+	}
 
-  .nav-open .icon-mobile-nav[name="close-outline"] {
-    display: block;
-  }
+	.nav-open .icon-mobile-nav[name="close-outline"] {
+		display: block;
+	}
 
-  .main-nav-list {
-    flex-direction: column;
-    justify-content: center;
-    gap: 4.8rem;
-  }
+	.main-nav-list {
+		flex-direction: column;
+		justify-content: center;
+		gap: 4.8rem;
+	}
 
-  .main-nav-link:link,
-  .main-nav-link:visited {
-    font-size: 2rem;
-  }
+	.main-nav-link:link,
+	.main-nav-link:visited {
+		font-size: 2rem;
+	}
 
-  /******************/
-  /*  HERO SECTION  */
-  /******************/
-  .hero-text h1 {
-    font-size: 5.2rem;
-  }
+	/******************/
+	/*  HERO SECTION  */
+	/******************/
+	.hero-text h1 {
+		font-size: 5.2rem;
+	}
 
-  /******************/
-  /* VIDEO SECTION  */
-  /******************/
-  .yt-video {
-    height: 40rem;
-    width: 80rem;
-  }
+	/******************/
+	/* VIDEO SECTION  */
+	/******************/
+	.yt-video {
+		height: 40rem;
+		width: 80rem;
+	}
 
-  /*******************/
-  /* CONTACT SECTION */
-  /*******************/
-  .section-contact .container {
-    grid-template-columns: 1fr;
-    max-width: 70rem;
-  }
+	/*******************/
+	/* CONTACT SECTION */
+	/*******************/
+	.section-contact .container {
+		grid-template-columns: 1fr;
+		max-width: 70rem;
+	}
 
-  .contact-img {
-    grid-row: 1;
-    width: 100%;
-  }
+	.contact-img {
+		grid-row: 1;
+		width: 100%;
+	}
 }
 
 /*******************************/
 /*     BELOW 944px (Tablets)   */
 /*******************************/
 @media (max-width: 59em) {
-  /*****************/
-  /* HERO SECTION  */
-  /*****************/
-  .hero-text h1 {
-    font-size: 4.4rem;
-  }
+	/*****************/
+	/* HERO SECTION  */
+	/*****************/
+	.hero-text h1 {
+		font-size: 4.4rem;
+	}
 
-  /*****************/
-  /*    REUSABLE   */
-  /*****************/
-  .header-secondary {
-    font-size: 3.6rem;
-  }
+	/*****************/
+	/*    REUSABLE   */
+	/*****************/
+	.header-secondary {
+		font-size: 3.6rem;
+	}
 
-  .icon {
-    padding: 2rem;
-    border-radius: 50%;
-    background-color: #ced4da;
-    color: #212529;
-    height: 3.2rem;
-    width: 3.2rem;
-    margin-bottom: 1.2rem;
-  }
+	.icon {
+		padding: 2rem;
+		border-radius: 50%;
+		background-color: #ced4da;
+		color: #212529;
+		height: 3.2rem;
+		width: 3.2rem;
+		margin-bottom: 1.2rem;
+	}
 
-  /***********************/
-  /*   VIDEO SECTION     */
-  /***********************/
-  .section-video {
-    padding: 4.8rem 0;
-  }
+	/***********************/
+	/*   VIDEO SECTION     */
+	/***********************/
+	.section-video {
+		padding: 4.8rem 0;
+	}
 
-  /***********************/
-  /*  SECTION ABOUT US   */
-  /***********************/
-  .about-container {
-    grid-template-columns: 1fr;
-    padding: 4.8rem;
-  }
+	/***********************/
+	/*  SECTION ABOUT US   */
+	/***********************/
+	.about-container {
+		grid-template-columns: 1fr;
+		padding: 4.8rem;
+	}
 
-  .about-img {
-    width: 70%;
-  }
+	.about-img {
+		width: 70%;
+	}
 
-  /* centering title of the section */
-  .container--big .hidden {
-    text-align: center;
-  }
+	/* centering title of the section */
+	.container--big .hidden {
+		text-align: center;
+	}
 
-  .about-container--reverse .about-text {
-    grid-row: 2;
-  }
+	.about-container--reverse .about-text {
+		grid-row: 2;
+	}
 
-  /*****************/
-  /* OFFER SECTION */
-  /*****************/
-  .section-offer .container--big {
-    grid-template-columns: 1fr 1fr;
-  }
+	/*****************/
+	/* OFFER SECTION */
+	/*****************/
+	.section-offer .container--big {
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 /*******************************/
 /*     BELOW 900px (Tablets)   */
 /*******************************/
 @media (max-width: 60em) {
-  /***********************/
-  /*   VIDEO SECTION     */
-  /***********************/
-  .yt-video {
-    width: 60rem;
-  }
+	/***********************/
+	/*   VIDEO SECTION     */
+	/***********************/
+	.yt-video {
+		width: 60rem;
+	}
 }
 
 /*******************************/
 /*     BELOW 800px (Tablets)   */
 /*******************************/
 @media (max-width: 50em) {
-  /*****************/
-  /* OFFER SECTION */
-  /*****************/
-  .section-offer .container--big {
-    grid-template-columns: 1fr;
-    padding: 0 12.4rem;
-  }
+	/*****************/
+	/* HERO SECTION  */
+	/*****************/
+	.section-hero {
+		
 
-  /* realizacje.html */
-  .header-realizations-desc {
-    font-size: 2rem;
-  }
+		display: flex;
+		justify-content: center;
+    align-items: center;
+	}
 
-  .container--big .realization-img {
-    width: 100%;
-  }
+	.hero-text h1 {
+		margin-top: 0;
+	}
+
+	/*****************/
+	/* OFFER SECTION */
+	/*****************/
+	.section-offer .container--big {
+		grid-template-columns: 1fr;
+		padding: 0 12.4rem;
+	}
+
+	/* realizacje.html */
+	.header-realizations-desc {
+		font-size: 2rem;
+	}
+
+	.container--big .realization-img {
+		width: 100%;
+	}
 }
 
 /*************************************/
 /*     BELOW 600px (Small Tablets)   */
 /*************************************/
 @media (max-width: 37.5em) {
-  /*****************/
-  /* HERO SECTION  */
-  /*****************/
-  .hero-text h1 {
-    font-size: 3.6rem;
-  }
+	/*****************/
+	/* HERO SECTION  */
+	/*****************/
+	.hero-text h1 {
+		font-size: 3.6rem;
+	}
 
-  .hero-text a:link,
-  .hero-text a:visited {
-    font-size: 2rem;
-  }
+	.hero-text a:link,
+	.hero-text a:visited {
+		font-size: 2rem;
+	}
 
-  /***********************/
-  /*       REUSABLE      */
-  /***********************/
-  .header-secondary {
-    font-size: 3rem;
-  }
-  /***********************/
-  /*   VIDEO SECTION     */
-  /***********************/
-  .yt-video {
-    width: 44rem;
-    height: 30rem;
-  }
+	/***********************/
+	/*       REUSABLE      */
+	/***********************/
+	.header-secondary {
+		font-size: 3rem;
+	}
+	/***********************/
+	/*   VIDEO SECTION     */
+	/***********************/
+	.yt-video {
+		width: 44rem;
+		height: 30rem;
+	}
 
-  /***********************/
-  /*  SECTION ABOUT US   */
-  /***********************/
-  .about-container {
-    padding: 2.4rem;
-  }
+	/***********************/
+	/*  SECTION ABOUT US   */
+	/***********************/
+	.about-container {
+		padding: 2.4rem;
+	}
 
-  .about-img {
-    width: 80%;
-  }
+	.about-img {
+		width: 80%;
+	}
 
-  .about-text {
-    font-size: 1.8rem;
-  }
+	.about-text {
+		font-size: 1.8rem;
+	}
 
-  /*****************/
-  /* OFFER SECTION */
-  /*****************/
-  .section-offer {
-    padding: 0 3.2rem;
-  }
+	/*****************/
+	/* OFFER SECTION */
+	/*****************/
+	.section-offer {
+		padding: 0 3.2rem;
+	}
 
-  .section-offer .container--big {
-    grid-template-columns: 1fr;
-    padding: 0 4.8rem;
-  }
+	.section-offer .container--big {
+		grid-template-columns: 1fr;
+		padding: 0 4.8rem;
+	}
 
-  /************************/
-  /* REALIZATIONS SECTION */
-  /************************/
-  .slider {
-    height: 35rem;
-  }
+	/************************/
+	/* REALIZATIONS SECTION */
+	/************************/
+	.slider {
+		height: 35rem;
+	}
 
-  /*******************/
-  /* CONTACT SECTION */
-  /*******************/
-  .contact-text {
-    font-size: 2rem;
-    line-height: 1.5;
-  }
+	/*******************/
+	/* CONTACT SECTION */
+	/*******************/
+	.contact-text {
+		font-size: 2rem;
+		line-height: 1.5;
+	}
 
-  /**********/
-  /* FOOTER */
-  /**********/
-  footer {
-    flex-direction: column;
-    gap: 2.4rem;
-  }
+	/**********/
+	/* FOOTER */
+	/**********/
+	footer {
+		flex-direction: column;
+		gap: 2.4rem;
+	}
 }
 
 /*************************************/
 /*   BELOW 510px (Big Smartphones)   */
 /*************************************/
 @media (max-width: 34em) {
-  /***********************/
-  /*  SECTION ABOUT US   */
-  /***********************/
-  .about-img {
-    width: 100%;
-  }
+	/***********************/
+	/*  SECTION ABOUT US   */
+	/***********************/
+	.about-img {
+		width: 100%;
+	}
 
-  /***********************/
-  /*    HERO SECTION     */
-  /***********************/
-  .section-hero {
-    background-position-x: 10%;
-  }
+	/***********************/
+	/*    HERO SECTION     */
+	/***********************/
+	.section-hero {
+		background-position-x: 10%;
+	}
 
-  /***********************/
-  /*  SECTION ABOUT US   */
-  /***********************/
-  .section-about .container--big {
-    padding: 0 2.4rem;
-  }
+	/***********************/
+	/*  SECTION ABOUT US   */
+	/***********************/
+	.section-about .container--big {
+		padding: 0 2.4rem;
+	}
 
-  .about-img {
-    width: 100%;
-  }
+	.about-img {
+		width: 100%;
+	}
 
-  /*****************/
-  /* OFFER SECTION */
-  /*****************/
-  .section-offer .container--big {
-    padding: 0 4.8rem;
-  }
+	/*****************/
+	/* OFFER SECTION */
+	/*****************/
+	.section-offer .container--big {
+		padding: 0 4.8rem;
+	}
 
-  .section-offer {
-    padding: 0;
-  }
+	.section-offer {
+		padding: 0;
+	}
 }
 
 /***********************************/
 /*     BELOW 450px (Smartphones)   */
 /***********************************/
 @media (max-width: 28.125em) {
-  /***********************/
-  /*   VIDEO SECTION     */
-  /***********************/
-  .yt-video {
-    width: 40rem;
-    height: 30rem;
-  }
+	/***********************/
+	/*   VIDEO SECTION     */
+	/***********************/
+	.yt-video {
+		width: 40rem;
+		height: 30rem;
+	}
 }
 
 /***********************************/
 /*     BELOW 400px (Smartphones)   */
 /***********************************/
 @media (max-width: 25em) {
-  .hero-text a:link,
-  .hero-text a:visited {
-    font-size: 1.8rem;
-  }
+	.hero-text a:link,
+	.hero-text a:visited {
+		font-size: 1.8rem;
+	}
 
-  /***********************/
-  /*   VIDEO SECTION     */
-  /***********************/
-  .yt-video {
-    width: 30rem;
-    height: 20rem;
-  }
+	/***********************/
+	/*   VIDEO SECTION     */
+	/***********************/
+	.yt-video {
+		width: 30rem;
+		height: 20rem;
+	}
 
-  /***********************/
-  /*  SECTION ABOUT US   */
-  /***********************/
-  .section-about .container--big {
-    padding: 0 2.4rem;
-  }
+	/***********************/
+	/*  SECTION ABOUT US   */
+	/***********************/
+	.section-about .container--big {
+		padding: 0 2.4rem;
+	}
 
-  .about-container {
-    padding: 0;
-  }
+	.about-container {
+		padding: 0;
+	}
 
-  .about-img {
-    width: 100%;
-  }
+	.about-img {
+		width: 100%;
+	}
 
-  /*****************/
-  /* OFFER SECTION */
-  /*****************/
-  .section-offer .container--big {
-    padding: 0 2.4rem;
-  }
+	/*****************/
+	/* OFFER SECTION */
+	/*****************/
+	.section-offer .container--big {
+		padding: 0 2.4rem;
+	}
 
-  .section-offer {
-    padding: 0;
-  }
+	.section-offer {
+		padding: 0;
+	}
 
-  /*******************/
-  /* CONTACT SECTION */
-  /*******************/
-  .section-contact .container:nth-child(2) {
-    padding: 3.2rem;
-  }
+	/*******************/
+	/* CONTACT SECTION */
+	/*******************/
+	.section-contact .container:nth-child(2) {
+		padding: 3.2rem;
+	}
 
-  /* realizacje.html */
-  .section-realizations .container--big {
-    padding: 0 1.2rem;
-  }
+	/* realizacje.html */
+	.section-realizations .container--big {
+		padding: 0 1.2rem;
+	}
 }
